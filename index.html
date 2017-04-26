@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Arcade</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/New folder.json", {onProgress: UnityProgress});
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>s
+  </head>
+  <body>
+  </body>
+  <header>
+   <nav class = "navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class = "navbar-brand" href="#">Quick fire tournament</a>
+            </div>
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="/">home</a>
+            </li>
+
+            <li>
+                <a href="/contact">contact</a>
+            </li>
+             </ul>
+    </nav>
+
+  </header>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Arcade</div>
+      </div>
+    </div>
+  </body>
+</html>
